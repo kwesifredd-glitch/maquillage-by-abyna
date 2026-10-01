@@ -18,15 +18,15 @@ Designed with an editorial, photography-first aesthetic inspired by high-end bri
    - Interactive Lightbox with fullscreen high-res zoom, keyboard navigation (`Left`, `Right`, `Escape`), touch swipe support, and image counters.
    - Real bridal transformation video reels (`reel-01.mp4` through `reel-05.mp4`) with smooth video controls.
 
-3. **Complete 8-Page Sitemap**:
+3. **Complete 7-Page Live Sitemap**:
    - `index.html` — Hero, 2-paragraph brand statement, top works gallery, pull-quotes, video reels, and footer.
    - `about.html` — Abyna's bio, 3 signature beauty pillars, morning-of calm timeline, and founder portrait.
    - `rates.html` — Transparent bridal packages (Ghanaian Cedi & USD equivalents), bridal party tiers, and luxury add-ons.
    - `portfolio.html` — Dynamic category filter tabs, full masonry grid, and transformation reels.
    - `training.html` — Professional 3-Day Bridal Artistry Masterclass and 1-Day "Master Your Own Face" private workshop.
    - `faqs.html` — Booking deposit policies (50% retainer), travel terms, skin prep tips, and cancellation policies.
-   - `questionnaire.html` — Comprehensive bridal consultation form with direct WhatsApp dispatch.
    - `contact.html` — Validated date inquiry form, phone, email, and instant WhatsApp click-to-chat.
+   *(Note: The bridal questionnaire is kept aside in `_archive/questionnaire.html` for future use).*
 
 4. **Universal WhatsApp Integration**:
    - Floating WhatsApp button persistent across every page with animated pulse and hover tooltip.
@@ -49,8 +49,9 @@ Maquillage by Abyna/
 ├── portfolio.html           # Portfolio with category filter tabs & lightbox
 ├── training.html            # Masterclasses & workshops
 ├── faqs.html                # Booking & travel policies, FAQs
-├── questionnaire.html       # Bridal consultation questionnaire
 ├── contact.html             # Contact & date availability inquiry
+├── _archive/
+│   └── questionnaire.html   # Bridal consultation questionnaire (kept aside)
 ├── README.md                # Project documentation & client guide
 └── assets/
     ├── css/
@@ -125,14 +126,14 @@ To add or change photos:
 
 ### 3. Wiring Up the Contact Form Backend
 
-The contact and questionnaire forms are designed to work seamlessly out-of-the-box with **Formspree**:
+The contact form is designed to work seamlessly out-of-the-box with **Formspree**:
 
 1. Create a free account at [Formspree.io](https://formspree.io).
 2. Create a new form named `Maquillage by Abyna - Bridal Inquiries` and set Abyna’s email as the recipient.
 3. Copy your Formspree form ID (e.g. `xbjnqweo` or your custom ID).
 4. Update the endpoint in:
    - `assets/js/content.js` under `SITE_CONFIG.brand.formspreeEndpoint`
-   - The `action="..."` attribute in `contact.html` and `questionnaire.html`
+   - The `action="..."` attribute in `contact.html`
 5. **Instant WhatsApp Fallback**: If internet connectivity is slow or if Formspree is unreachable, the form automatically falls back to generating a pre-filled WhatsApp message with all the bride's details ready to send with one click!
 
 ---
