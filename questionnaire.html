@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Bridal Client Questionnaire — Maquillage by Abyna | Accra, Ghana</title>
+  <meta name="description" content="Bridal makeup consultation questionnaire for Maquillage by Abyna in Accra, Ghana. Share your wedding timeline, skin profile, ceremony locations, and bridal party details.">
+  <link rel="canonical" href="https://maquillagebyabyna.com/questionnaire.html">
+
+  <meta property="og:site_name" content="Maquillage by Abyna">
+  <meta property="og:title" content="Bridal Client Questionnaire — Maquillage by Abyna">
+  <meta property="og:description" content="Customized bridal beauty consultation form for brides in Accra, Ghana and destination weddings worldwide.">
+  <meta property="og:image" content="assets/images/portfolio/traditional/trad-05.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header" id="mainHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Maquillage by Abyna Home">
+        <span class="logo-main">Maquillage by Abyna</span>
+        <span class="logo-sub">Accra · Bridal Artistry</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="rates.html" class="nav-link">Rates</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="training.html" class="nav-link">Training</a>
+        <a href="faqs.html" class="nav-link">FAQs</a>
+        <a href="questionnaire.html" class="nav-link active">Questionnaire</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-gold btn-sm">Book Your Date</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+          <span class="hamburger-lines"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <nav class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Abyna</a>
+      <a href="rates.html" class="mobile-nav-link">Rates & Packages</a>
+      <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+      <a href="training.html" class="mobile-nav-link">Training & Courses</a>
+      <a href="faqs.html" class="mobile-nav-link">FAQs</a>
+      <a href="questionnaire.html" class="mobile-nav-link active">Client Questionnaire</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <a href="contact.html" class="btn btn-gold">Inquire for Your Date</a>
+      <p class="text-muted" style="font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">Accra, Ghana · @maquillage_by_abyna</p>
+    </div>
+  </div>
+
+  <!-- ==================== BANNER ==================== -->
+  <section class="page-banner">
+    <div class="container">
+      <span class="heading-subtitle">Bespoke Bridal Consultation</span>
+      <h1 class="heading-1">Bridal Client Questionnaire</h1>
+      <p class="text-lead">
+        To help us craft your personalized timeline and curated look, please share the vision, aesthetics, and details of your wedding celebrations.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== QUESTIONNAIRE FORM SECTION ==================== -->
+  <section class="section">
+    <div class="container questionnaire-container">
+
+      <div class="questionnaire-card">
+
+        <!-- Status Alert Container -->
+        <div id="questionnaireAlert" class="form-alert" role="alert"></div>
+
+        <form id="bridalQuestionnaireForm" method="POST" action="https://formspree.io/f/xbjnqweo">
+
+          <!-- Section 1: Couple & Event Info -->
+          <div class="form-section-header">
+            <h3>1. The Couple & Celebrations</h3>
+            <p>Tell us who you are and when you are saying "I Do".</p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="brideName" class="form-label">Bride's Full Name <span class="required">*</span></label>
+              <input type="text" id="brideName" name="brideName" class="form-control" placeholder="e.g. Jessica Mensah" required>
+            </div>
+            <div class="form-group">
+              <label for="partnerName" class="form-label">Partner's Full Name</label>
+              <input type="text" id="partnerName" name="partnerName" class="form-control" placeholder="e.g. Kojo Mensah">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="brideEmail" class="form-label">Email Address <span class="required">*</span></label>
+              <input type="email" id="brideEmail" name="email" class="form-control" placeholder="jessica@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="bridePhone" class="form-label">Phone / WhatsApp Number <span class="required">*</span></label>
+              <input type="tel" id="bridePhone" name="phone" class="form-control" placeholder="+233 24 000 0000" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="weddingDate" class="form-label">White Wedding Date <span class="required">*</span></label>
+              <input type="date" id="weddingDate" name="weddingDate" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="traditionalDate" class="form-label">Traditional Wedding Date (If Applicable)</label>
+              <input type="date" id="traditionalDate" name="traditionalDate" class="form-control">
+            </div>
+          </div>
+
+          <!-- Section 2: Prep Logistics & Timing -->
+          <div class="form-section-header" style="margin-top: 2.5rem;">
+            <h3>2. Locations & Morning Timelines</h3>
+            <p>Where you will be getting ready and your desired ready-by hour.</p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="prepLocation" class="form-label">Preparation Location / Hotel Suite <span class="required">*</span></label>
+              <input type="text" id="prepLocation" name="prepLocation" class="form-control" placeholder="e.g. Kempinski Hotel Gold Coast City, Accra" required>
+              <div class="form-note">Include hotel name, room number (if known), or residential area in Accra or beyond.</div>
+            </div>
+            <div class="form-group">
+              <label for="readyByTime" class="form-label">Photography Ready-By Time <span class="required">*</span></label>
+              <input type="time" id="readyByTime" name="readyByTime" class="form-control" required>
+              <div class="form-note">The exact time you must be fully dressed with veil/accessories on for pre-ceremony photos.</div>
+            </div>
+          </div>
+
+          <!-- Section 3: Beauty Aesthetic & Skin Profile -->
+          <div class="form-section-header" style="margin-top: 2.5rem;">
+            <h3>3. Beauty Aesthetic & Skin Profile</h3>
+            <p>Help us customize our skincare formulation and color palette.</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Desired Makeup Aesthetic</label>
+            <div class="radio-group-wrap">
+              <label class="radio-option-card">
+                <input type="radio" name="preferredLook" value="Radiant Soft Glam" checked>
+                <span class="radio-option-label">Radiant Soft Glam</span>
+              </label>
+              <label class="radio-option-card">
+                <input type="radio" name="preferredLook" value="Timeless Clean Skin">
+                <span class="radio-option-label">Timeless Clean Skin</span>
+              </label>
+              <label class="radio-option-card">
+                <input type="radio" name="preferredLook" value="Regal Full Glam">
+                <span class="radio-option-label">Regal Full Glam</span>
+              </label>
+              <label class="radio-option-card">
+                <input type="radio" name="preferredLook" value="Traditional Kente Glow">
+                <span class="radio-option-label">Traditional Kente Glow</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Skin Type</label>
+              <div class="radio-group-wrap" style="grid-template-columns: repeat(3, 1fr);">
+                <label class="radio-option-card">
+                  <input type="radio" name="skinType" value="Normal" checked>
+                  <span class="radio-option-label">Normal</span>
+                </label>
+                <label class="radio-option-card">
+                  <input type="radio" name="skinType" value="Oily / Prone to Shine">
+                  <span class="radio-option-label">Oily</span>
+                </label>
+                <label class="radio-option-card">
+                  <input type="radio" name="skinType" value="Dry / Dehydrated">
+                  <span class="radio-option-label">Dry</span>
+                </label>
+                <label class="radio-option-card">
+                  <input type="radio" name="skinType" value="Combination">
+                  <span class="radio-option-label">Combination</span>
+                </label>
+                <label class="radio-option-card">
+                  <input type="radio" name="skinType" value="Sensitive / Reactive">
+                  <span class="radio-option-label">Sensitive</span>
+                </label>
+                <label class="radio-option-card">
+                  <input type="radio" name="skinType" value="Acne-Prone">
+                  <span class="radio-option-label">Acne-Prone</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="partyCount" class="form-label">Number of Bridal Party Members Needing Makeup</label>
+              <select id="partyCount" name="partyCount" class="form-control">
+                <option value="Just the Bride (0 bridal party)">Just the Bride (0 bridal party)</option>
+                <option value="1 - 3 attendants / mothers">1 - 3 attendants / mothers</option>
+                <option value="4 - 6 attendants / mothers">4 - 6 attendants / mothers</option>
+                <option value="7+ attendants (Team of Artists Needed)">7+ attendants (Team of Artists Needed)</option>
+              </select>
+              <div class="form-note">Includes bridesmaids, maid of honor, mother of bride/groom, and guests.</div>
+            </div>
+          </div>
+
+          <!-- Section 4: Creative Team & Special Notes -->
+          <div class="form-section-header" style="margin-top: 2.5rem;">
+            <h3>4. Creative Team & Inspiration Notes</h3>
+            <p>Collaborating with your photographers and hairstylists ensures seamless morning coordination.</p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="photographer" class="form-label">Photographer & Videographer (@handles)</label>
+              <input type="text" id="photographer" name="photographer" class="form-control" placeholder="e.g. @focusghana / @amponsahfilms">
+            </div>
+            <div class="form-group">
+              <label for="hairstylist" class="form-label">Bridal Hairstylist (@handle)</label>
+              <input type="text" id="hairstylist" name="hairstylist" class="form-control" placeholder="e.g. @hairbyabena">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="notes" class="form-label">Special Notes, Skin Sensitivities or Vision Details</label>
+            <textarea id="notes" name="notes" class="form-control" rows="4" placeholder="Tell us about any skincare allergies, preferred lip shades, traditional accessories, veil style, or specific bridal inspirations you adore..."></textarea>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="questionnaire-actions">
+            <button type="submit" class="btn btn-gold">
+              Submit Questionnaire
+            </button>
+            <button type="button" id="btnQuestionnaireWhatsApp" class="btn btn-whatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 6px;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              Send Directly via WhatsApp
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="logo-main">Maquillage by Abyna</span>
+            <span class="logo-sub">Accra · Bridal Artistry</span>
+          </div>
+          <p>Specializing in timeless bridal beauty, traditional Ghanaian engagement ceremonies, and bespoke morning-of pampering across Accra and destination locations worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="about.html">About Abyna</a>
+            <a href="rates.html">Rates & Packages</a>
+            <a href="portfolio.html">Bridal Portfolio</a>
+            <a href="training.html">Training & Courses</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Client Care</h4>
+          <div class="footer-links">
+            <a href="questionnaire.html">Client Questionnaire</a>
+            <a href="faqs.html">Booking & Retainer Policy</a>
+            <a href="faqs.html">Travel Policies</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Location</h4>
+          <div class="footer-links">
+            <p style="font-size: 0.88rem;">Accra, Ghana (Greater Accra)</p>
+            <p style="font-size: 0.88rem; color: var(--accent-gold);">Available Worldwide</p>
+            <p style="font-size: 0.82rem; color: var(--text-light-muted); margin-top: 1rem;">Instagram: @maquillage_by_abyna</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Maquillage by Abyna. All Rights Reserved.</div>
+        <div><a href="contact.html">Inquire for Booking</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
